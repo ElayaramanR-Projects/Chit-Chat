@@ -1,14 +1,17 @@
+import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import Login from './pages/Login/login';
+import Auth from './pages/Auth/Auth';
 import Router from './router';
-function App() {
+
+const App : React.FC = () => {
 	const isLoggedIn = false;
+  console.log('app')
 	return (
-    	<Routes>
-			{!isLoggedIn && <Route path='/login' element={<Login/>} />}
+      <Routes>
+			{!isLoggedIn && <Route path='/auth' element={<Auth/>} />}
 			<Route
 				path='*'
-				element={!isLoggedIn ? <Navigate to='/login' /> : <Router />}
+				element={!isLoggedIn ? <Navigate to='/auth' /> : <Router />}
 			/>
 		</Routes>
 	);

@@ -1,7 +1,8 @@
+/* eslint-disable react/react-in-jsx-scope */
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from "./App";
-import "./styles/tailwind.css";
+import "./styles/tailwind.scss";
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
