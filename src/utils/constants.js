@@ -1,4 +1,4 @@
-const constants = {
+const Constants = {
     FORM : {
         CREATE_ACCOUNT_LABEL : 'Create Account',
         LOGIN_LABEL : 'Login',
@@ -12,4 +12,4 @@ const constants = {
     }
 }
 
-export default constants;
+export default Constants;

@@ -6,10 +6,22 @@ module.exports = {
         '3xl':'64rem'
       }
     },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+    screens: {
+      'sm': '640px',
+
+      'md': '768px',
+
+      'lg': '1024px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
+
     },
+    fontFamily: {
+      display: ['Inter', 'system-ui', 'sans-serif'],
+      body: ['Inter', 'system-ui', 'sans-serif'],
+    }
   },
   plugins: [],
   content: ["./src/**/*.{js,jsx,ts,tsx,html}", "./public/index.html"],
